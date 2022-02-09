@@ -1,5 +1,6 @@
 # 1Liner
 ### generating uuid
+```js
 function createUUID(): string {
   let dt = new Date().getTime();
   var uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
@@ -12,3 +13,4 @@ function createUUID(): string {
   );
   return uuid;
 }
+```
