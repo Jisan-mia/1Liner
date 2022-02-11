@@ -14,3 +14,13 @@ function createUUID(): string {
   return uuid;
 }
 ```
+### katex
+```js
+parsePostContent(post){
+  for(var e = 0; e < post.equations.length; e++){
+    var equation = post.equations[e].value;
+    var position = post.equations[e].key;
+    post.content = post.content.replace("[" + position + "]", katex.renderToString(equation));
+  }
+  return post.content;
+```
