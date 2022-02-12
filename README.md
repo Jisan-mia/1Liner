@@ -24,3 +24,11 @@ parsePostContent(post){
   }
   return post.content;
 ```
+### is multiple objects are same
+```js
+const isEqual = (...objects) => objects.every((obj) => JSON.stringify(obj) === JSON.stringify(objects[0]));
+
+isEqual({name: 'JavaScript'}, {name: 'JavaScript'}) // true
+isEqual({name: 'JavaScript'}, {name: 'Python'}) // false
+
+```
