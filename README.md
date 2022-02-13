@@ -32,3 +32,9 @@ isEqual({name: 'JavaScript'}, {name: 'JavaScript'}) // true
 isEqual({name: 'JavaScript'}, {name: 'Python'}) // false
 
 ```
+### remove duplicates from arra
+```
+const removeDuplicate = (arr) => arr.filter((i) => arr.indexOf(i) === arr.lastIndexOf(i));
+
+const withSet = (arr) => [...new Set(arr)]
+```
