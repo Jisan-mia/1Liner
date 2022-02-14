@@ -38,3 +38,7 @@ const removeDuplicate = (arr) => arr.filter((i) => arr.indexOf(i) === arr.lastIn
 
 const withSet = (arr) => [...new Set(arr)]
 ```
+### shuffle an array
+```js
+const shuffleArray = (arr) => arr.sort(() => 0.5 - Math.random());
+```
