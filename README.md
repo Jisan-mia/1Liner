@@ -45,4 +45,8 @@ const shuffleArray = (arr) => arr.sort(() => 0.5 - Math.random());
 ### capitalize first letter
 ```js
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
+``` 
+### Day difference
+```js
+const dayDif = (date1, date2) => Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / 86400000)
 ```
