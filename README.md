@@ -50,3 +50,7 @@ const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 ```js
 const dayDif = (date1, date2) => Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / 86400000)
 ```
+### get average of numbers
+```js
+const average = (...args) => args.reduce((a, b) => a + b) / args.length;
+```
