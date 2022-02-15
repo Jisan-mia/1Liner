@@ -46,11 +46,15 @@ const shuffleArray = (arr) => arr.sort(() => 0.5 - Math.random());
 ```js
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 ``` 
-### Day difference
+### day difference
 ```js
 const dayDif = (date1, date2) => Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / 86400000)
 ```
 ### get average of numbers
 ```js
 const average = (...args) => args.reduce((a, b) => a + b) / args.length;
+```
+### reverse a string
+```js
+const reverse = str => str.split('').reverse().join('');
 ```
