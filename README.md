@@ -42,3 +42,7 @@ const withSet = (arr) => [...new Set(arr)]
 ```js
 const shuffleArray = (arr) => arr.sort(() => 0.5 - Math.random());
 ```
+### capitalize first letter
+```js
+const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
+```
