@@ -78,3 +78,7 @@ const getIntersection = (a, ...arr) => [...new Set(a)].filter((v) => arr.every((
 ```js
 const union = (...arr) => [...new Set(arr.flat())];
 ```
+### sort array of item by given key
+```js
+const sortBy = (arr, k) => arr.concat().sort((a, b) => (a[k] > b[k] ? 1 : a[k] < b[k] ? -1 : 0));
+```
