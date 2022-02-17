@@ -70,3 +70,7 @@ const maxIndex = (arr) => arr.reduce((prev, curr, i, a) => (curr > a[prev] ? i :
 ```js
 const minInedx = (arr) => arr.reduce((prev, curr, i, a) => (curr < a[prev] ? i : prev), 0);
 ```
+### intersection of arrays
+```js
+const getIntersection = (a, ...arr) => [...new Set(a)].filter((v) => arr.every((b) => b.includes(v)));
+```
