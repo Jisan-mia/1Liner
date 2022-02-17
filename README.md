@@ -74,3 +74,7 @@ const minInedx = (arr) => arr.reduce((prev, curr, i, a) => (curr < a[prev] ? i :
 ```js
 const getIntersection = (a, ...arr) => [...new Set(a)].filter((v) => arr.every((b) => b.includes(v)));
 ```
+### union of arrays
+```js
+const union = (...arr) => [...new Set(arr.flat())];
+```
