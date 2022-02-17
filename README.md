@@ -64,5 +64,9 @@ const empty = (arr) => (arr.length = 0);
 ```
 ### find index of maximum number of array
 ```js
-const indexOfMax = (arr) => arr.reduce((prev, curr, i, a) => (curr > a[prev] ? i : prev), 0);
+const maxIndex = (arr) => arr.reduce((prev, curr, i, a) => (curr > a[prev] ? i : prev), 0);
+```
+### find index of minumum number of array
+```js
+const minInedx = (arr) => arr.reduce((prev, curr, i, a) => (curr < a[prev] ? i : prev), 0);
 ```
