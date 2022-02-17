@@ -62,3 +62,7 @@ const reverse = str => str.split('').reverse().join('');
 ```js
 const empty = (arr) => (arr.length = 0);
 ```
+### find index of maximum number of array
+```js
+const indexOfMax = (arr) => arr.reduce((prev, curr, i, a) => (curr > a[prev] ? i : prev), 0);
+```
