@@ -58,3 +58,7 @@ const average = (...args) => args.reduce((a, b) => a + b) / args.length;
 ```js
 const reverse = str => str.split('').reverse().join('');
 ```
+### empty an array
+```js
+const empty = (arr) => (arr.length = 0);
+```
